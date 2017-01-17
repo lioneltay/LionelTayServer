@@ -7,7 +7,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 
 
-app.get('/math/*', function (req, res) {
+app.get(/\/math.*/, function (req, res) {
   // and drop 'public' in the middle of here
   res.sendFile(path.join(__dirname, 'public/MathSite/dist', 'index.html'))
 })
