@@ -1,23 +1,16 @@
 'use strict';
 
-var _express = require('express');
+var express = require('express');
+var path = require('path');
 
-var _express2 = _interopRequireDefault(_express);
-
-var _path = require('path');
-
-var _path2 = _interopRequireDefault(_path);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var app = (0, _express2.default)();
+var app = express();
 
 // serve our static stuff like index.css
-app.use(_express2.default.static(_path2.default.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/math/*', function (req, res) {
+app.get(/\/math.*/, function (req, res) {
   // and drop 'public' in the middle of here
-  res.sendFile(_path2.default.join(__dirname, 'public/MathSite/dist', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public/MathSite/dist', 'index.html'));
 });
 
 // send all requests to index.html so browserHistory in React Router works
