@@ -97,8 +97,9 @@
 .Note {
   margin: 15px auto 0 auto;
   padding: 20px;
-  border: 9px double grey;
-  width: 80%; }
+  border: 9px double #adadad;
+  width: 80%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); }
   .Note ul {
     list-style-position: outside;
     margin-left: 20px; }
@@ -110,6 +111,28 @@
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; }
+.active-profile-nav-link {
+  color: green; }
+.Loading {
+  margin: 25%;
+  text-align: center;
+  font-size: 50px;
+  color: blue; }
+.Lesson {
+  padding: 15px; }
+  .Lesson h1 {
+    font-size: 23px;
+    margin: 0; }
+  .Lesson h2 {
+    font-size: 20px;
+    margin: 0; }
+  .Lesson ul {
+    list-style-position: outside;
+    margin-left: 15px; }
+    .Lesson ul li {
+      margin-left: 15px; }
+      .Lesson ul li a:hover {
+        cursor: pointer; }
 .Home h1 {
   color: #467FAF; }
 
@@ -164,4 +187,11 @@ img.hcenter {
   margin-left: auto;
   margin-right: auto; }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/
